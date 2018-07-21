@@ -1,0 +1,23 @@
+body {
+	font-family: Hind;
+}
+
+#main-doc {
+	position: absolute;
+	margin-left: 260px;
+}
+
+#navbar {
+	position: fixed;
+	min-width: 290px;
+	font-size: 15px;
+	width: 300px;
+}
+
+.main-section h1 {
+	font-size: 25px;
+}
+
+.main-section p {
+	font-size: 18px;
+}

@@ -3,9 +3,18 @@
 <head>
     <meta charset="utf-8">
     <title>Documentation page</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head> 
 <body>
+    <nav id="navbar">
+        <h1>Cascading Style Sheet</h1>
+        <h2>Introduction to CSS</h2>
+        <h2>Selectors</h2>
+        <h2>Declaration block</h2>
+        <h2>Use</h2>
+        <h2>Positioning</h2>
+    </nav>
     <main id="main-doc">
         <section class="main-section" id="Introduction_to_CSS">
             <h1>Introduction to CSS</h1>
@@ -58,9 +67,36 @@
                 </xmp>
             </code>
         </section>
-        <section class="main-section">
-            
-        </section>
-    </main>
+        <section class="main-section" id="positioning">
+            <h1>Positioning</h1>
+            <p>CSS 2.1 defines three positioning schemes:</p>
+
+            <ul>
+                <li><strong>Normal flow:</strong> inline items are laid out in the same way as the letters in words in text, one after the other across the available space until there is no more room, then starting a new line below. Block items stack vertically, like paragraphs and like the items in a bulleted list. Normal flow also includes relative positioning of block or inline items, and run-in boxes.</li>
+                <li><strong>Floats:</strong>a floated item is taken out of the normal flow and shifted to the left or right as far as possible in the space available. Other content then flows alongside the floated item.</li>
+                <li><strong>Absolute positioning:</strong>an absolutely positioned item has no place in, and no effect on, the normal flow of other items. It occupies its assigned position in its container independently of other items.</li>
+            </ul>
+
+            <h3>Position property</h3>
+            <p>There are four possible values of the <code>position</code> property. If an item is positioned in any way other than <code>static</code>, then the further properties <code>top</code>, <code>bottom</code>, <code>left</code>, and <code>right</code> are used to specify offsets and positions.</p>
+
+            <ul>
+                <li><strong>Static:</strong>the default value places the item in the normal flow</li>
+                <li><strong>Relative:</strong>the item is placed in the normal flow, and then shifted or offset from that position. Subsequent flow items are laid out as if the item had not been moved.</li>
+                <li><strong>Absolute:</strong>specifies absolute positioning. The element is positioned in relation to its nearest non-static ancestor.</li>
+                <li><strong>Fixed:</strong>the item is absolutely positioned in a fixed position on the screen even as the rest of the document is scrolled.</li>
+            </ul>
+
+            <h3>Float and clear</h3>
+            <p>The <code>float</code> property may have one of three values. Absolutely positioned or fixed items cannot be floated. Other elements normally flow around floated items, unless they are prevented from doing so by their <code>clear</code> property.</p>
+
+            <ul>
+                <li><strong>Left:</strong>the item floats to the left of the line that it would have appeared in; other items may flow around its right side.</li>
+                <li><strong>Right:</strong>the item floats to the right of the line that it would have appeared in; other items may flow around its left side.</li>
+                <li><strong>Clear:</strong>Forces the element to appear underneath ("clear") floated elements to the left (<code>clear:left</code>), right (<code>clear:right</code>) or both sides (<code>clear:both</code>).</li>
+            </ul>
+        </ul>
+    </section>
+</main>
 </body>
 </html>

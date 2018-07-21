@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation page</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction_to_CSS">
+            <h1>Introduction to CSS</h1>
+            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.<br><br>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.</p>
+        </section>
+        <section class="main-section" id="selectors">
+            <h1>Selectors</h1>
+            <p>In CSS, selectors declare which part of the markup a style applies to by matching tags and attributes in the markup itself. Selectors may apply to:</p>
+            <ul>
+                <li>all elements of a specific type, e.g. the second-level headers h2</li>
+                <li>elements specified by attribute, in particular:</li>
+                <ul>
+                    <li>id: an identifier unique within the document</li>
+                    <li>class: an identifier that can annotate multiple elements in a document</li>
+                </ul>
+                <li>elements depending on how they are placed relative to others in the document tree</li>
+            </ul>
+            <p>Classes and IDs are case-sensitive, start with letters, and can include alphanumeric characters and underscores. A class may apply to any number of instances of any elements. An ID may only be applied to a single element.</p>
+        </section>
+        <section class="main-section" id="Declaration_block<">
+            <h1>Declaration block</h1>
+            <p>A declaration block consists of a list of declarations in braces. Each declaration itself consists of a property, a colon <code>(:)</code>, and a value. If there are multiple declarations in a block, a semi-colon <code>(;)</code> must be inserted to separate each declaration.</p>
+            <p>Properties are specified in the CSS standard. Each property has a set of possible values. Some properties can affect any type of element, and others apply only to particular groups of elements.</p>
+            <p>Values may be keywords, such as "center" or "inherit", or numerical values, such as 200px (200 pixels), 50vw (50 percent of the viewport width) or 80% (80 percent of the window width). Color values can be specified with keywords (e.g. "red"), hexadecimal values (e.g. #FF0000, also abbreviated as #F00), RGB values on a 0 to 255 scale (e.g. <code>rgb(255, 0, 0)</code>), RGBA values that specify both color and alpha transparency (e.g. <code>rgba(255, 0, 0, 0.8)</code>), or HSL or HSLA values (e.g. <code>hsl(000, 100%, 50%</code>), <code>hsla(000, 100%, 50%, 80%)</code>).</p>
+        </section>
+        <section class="main-section" id="Use">
+            <h1>Use</h1>
+            <p>Before CSS, nearly all presentational attributes of HTML documents were contained within the HTML markup. All font colors, background styles, element alignments, borders and sizes had to be explicitly described, often repeatedly, within the HTML. CSS lets authors move much of that information to another file, the style sheet, resulting in considerably simpler HTML.</p>
+            <p>For example, headings (h1 elements), sub-headings (h2), sub-sub-headings (h3), etc., are defined structurally using HTML. In print and on the screen, choice of font, size, color and emphasis for these elements is presentational.</p>
+            <p>For example, headings (<code>h1</code> elements), sub-headings (<code>h2)</code>, sub-sub-headings (<code>h3</code>), etc., are defined structurally using HTML. In print and on the screen, choice of font, size, color and emphasis for these elements is presentational.</p>
+            <p>Before CSS, document authors who wanted to assign such typographic characteristics to, say, all <code>h2</code> headings had to repeat HTML presentational markup for each occurrence of that heading type. This made documents more complex, larger, and more error-prone and difficult to maintain. CSS allows the separation of presentation from structure. CSS can define color, font, text alignment, size, borders, spacing, layout and many other typographic characteristics, and can do so independently for on-screen and printed views. CSS also defines non-visual styles, such as reading speed and emphasis for aural text readers. The W3C has now deprecated the use of all presentational HTML markup.</p>
+            <p>For example, under pre-CSS HTML, a heading element defined with red text would be written as:</p>
+
+            <code>
+                <xmp><h1><font color="red"> Chapter 1. </font></h1></xmp>
+            </code>
+
+            <p>Using CSS, the same element can be coded using style properties instead of HTML presentational attributes:</p>
+
+            <code>
+                <xmp><h1 style="color: red;"> Chapter 1. </h1></xmp>
+            </code>
+
+            <p>The advantages of this may not be immediately clear (since the second form is actually more verbose), but the power of CSS becomes more apparent when the style properties are placed in an internal style element or, even better, an external CSS file.</p>
+
+            <p>The styles can also be placed in an external CSS file, as described below, and loaded using syntax similar to:</p>
+
+            <code>
+                <xmp><link href="path/to/file.css" rel="stylesheet" type="text/css">
+                </xmp>
+            </code>
+        </section>
+        <section class="main-section">
+            
+        </section>
+    </main>
+</body>
+</html>

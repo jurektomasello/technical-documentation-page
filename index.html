@@ -1,3 +1,5 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,20 +10,20 @@
 </head> 
 <body>
     <nav id="navbar">
-        <h1>Cascading Style Sheet</h1>
-        <p><a href="#introduction_to_CSS">Introduction to CSS</a></p>
-        <p><a href="#selectors">Selectors</a></p>
-        <p><a href="#declaration_block">Declaration block</a></p>
-        <p><a href="#use">Use</a></p>
-        <p><a href="#positioning">Positioning</a></p>
+        <header><h1>Cascading Style Sheet</h1></header>
+        <p><a href="#Introduction_to_CSS" class="nav-link">Introduction to CSS</a></p>
+        <p><a href="#Selectors" class="nav-link">Selectors</a></p>
+        <p><a href="#Declaration_block" class="nav-link">Declaration block</a></p>
+        <p><a href="#Use" class="nav-link">Use</a></p>
+        <p><a href="#Positioning" class="nav-link">Positioning</a></p>
     </nav>
     <main id="main-doc">
-        <section class="main-section" id="introduction_to_CSS">
-            <h1>Introduction to CSS</h1>
+        <section class="main-section" id="Introduction_to_CSS">
+            <header><h1>Introduction to CSS</h1></header>
             <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.<br><br>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.</p>
         </section>
-        <section class="main-section" id="selectors">
-            <h1>Selectors</h1>
+        <section class="main-section" id="Selectors">
+            <header><h1>Selectors</h1></header>
             <p>In CSS, selectors declare which part of the markup a style applies to by matching tags and attributes in the markup itself. Selectors may apply to:</p>
             <ul>
                 <li>all elements of a specific type, e.g. the second-level headers h2</li>
@@ -34,14 +36,14 @@
             </ul>
             <p>Classes and IDs are case-sensitive, start with letters, and can include alphanumeric characters and underscores. A class may apply to any number of instances of any elements. An ID may only be applied to a single element.</p>
         </section>
-        <section class="main-section" id="declaration_block">
-            <h1>Declaration block</h1>
+        <section class="main-section" id="Declaration_block">
+            <header><h1>Declaration block</h1></header>
             <p>A declaration block consists of a list of declarations in braces. Each declaration itself consists of a property, a colon <code>(:)</code>, and a value. If there are multiple declarations in a block, a semi-colon <code>(;)</code> must be inserted to separate each declaration.</p>
             <p>Properties are specified in the CSS standard. Each property has a set of possible values. Some properties can affect any type of element, and others apply only to particular groups of elements.</p>
             <p>Values may be keywords, such as "center" or "inherit", or numerical values, such as 200px (200 pixels), 50vw (50 percent of the viewport width) or 80% (80 percent of the window width). Color values can be specified with keywords (e.g. "red"), hexadecimal values (e.g. #FF0000, also abbreviated as #F00), RGB values on a 0 to 255 scale (e.g. <code>rgb(255, 0, 0)</code>), RGBA values that specify both color and alpha transparency (e.g. <code>rgba(255, 0, 0, 0.8)</code>), or HSL or HSLA values (e.g. <code>hsl(000, 100%, 50%</code>), <code>hsla(000, 100%, 50%, 80%)</code>).</p>
         </section>
-        <section class="main-section" id="use">
-            <h1>Use</h1>
+        <section class="main-section" id="Use">
+            <header><h1>Use</h1></header>
             <p>Before CSS, nearly all presentational attributes of HTML documents were contained within the HTML markup. All font colors, background styles, element alignments, borders and sizes had to be explicitly described, often repeatedly, within the HTML. CSS lets authors move much of that information to another file, the style sheet, resulting in considerably simpler HTML.</p>
             <p>For example, headings (h1 elements), sub-headings (h2), sub-sub-headings (h3), etc., are defined structurally using HTML. In print and on the screen, choice of font, size, color and emphasis for these elements is presentational.</p>
             <p>For example, headings (<code>h1</code> elements), sub-headings (<code>h2)</code>, sub-sub-headings (<code>h3</code>), etc., are defined structurally using HTML. In print and on the screen, choice of font, size, color and emphasis for these elements is presentational.</p>
@@ -67,33 +69,33 @@
                 </xmp>
             </code>
         </section>
-        <section class="main-section" id="positioning">
-            <h1>Positioning</h1>
+        <section class="main-section" id="Positioning">
+            <header><h1>Positioning</h1></header>
             <p>CSS 2.1 defines three positioning schemes:</p>
 
             <ul>
-                <li><strong>Normal flow:</strong> inline items are laid out in the same way as the letters in words in text, one after the other across the available space until there is no more room, then starting a new line below. Block items stack vertically, like paragraphs and like the items in a bulleted list. Normal flow also includes relative positioning of block or inline items, and run-in boxes.</li>
-                <li><strong>Floats:</strong>a floated item is taken out of the normal flow and shifted to the left or right as far as possible in the space available. Other content then flows alongside the floated item.</li>
-                <li><strong>Absolute positioning:</strong>an absolutely positioned item has no place in, and no effect on, the normal flow of other items. It occupies its assigned position in its container independently of other items.</li>
+                <li><strong>Normal flow: </strong> inline items are laid out in the same way as the letters in words in text, one after the other across the available space until there is no more room, then starting a new line below. Block items stack vertically, like paragraphs and like the items in a bulleted list. Normal flow also includes relative positioning of block or inline items, and run-in boxes.</li>
+                <li><strong>Floats: </strong>a floated item is taken out of the normal flow and shifted to the left or right as far as possible in the space available. Other content then flows alongside the floated item.</li>
+                <li><strong>Absolute positioning: </strong>an absolutely positioned item has no place in, and no effect on, the normal flow of other items. It occupies its assigned position in its container independently of other items.</li>
             </ul>
 
             <h3>Position property</h3>
             <p>There are four possible values of the <code>position</code> property. If an item is positioned in any way other than <code>static</code>, then the further properties <code>top</code>, <code>bottom</code>, <code>left</code>, and <code>right</code> are used to specify offsets and positions.</p>
 
             <ul>
-                <li><strong>Static:</strong>the default value places the item in the normal flow</li>
-                <li><strong>Relative:</strong>the item is placed in the normal flow, and then shifted or offset from that position. Subsequent flow items are laid out as if the item had not been moved.</li>
-                <li><strong>Absolute:</strong>specifies absolute positioning. The element is positioned in relation to its nearest non-static ancestor.</li>
-                <li><strong>Fixed:</strong>the item is absolutely positioned in a fixed position on the screen even as the rest of the document is scrolled.</li>
+                <li><strong>Static: </strong>the default value places the item in the normal flow.</li>
+                <li><strong>Relative: </strong>the item is placed in the normal flow, and then shifted or offset from that position. Subsequent flow items are laid out as if the item had not been moved.</li>
+                <li><strong>Absolute: </strong>specifies absolute positioning. The element is positioned in relation to its nearest non-static ancestor.</li>
+                <li><strong>Fixed: </strong>the item is absolutely positioned in a fixed position on the screen even as the rest of the document is scrolled.</li>
             </ul>
 
             <h3>Float and clear</h3>
             <p>The <code>float</code> property may have one of three values. Absolutely positioned or fixed items cannot be floated. Other elements normally flow around floated items, unless they are prevented from doing so by their <code>clear</code> property.</p>
 
             <ul>
-                <li><strong>Left:</strong>the item floats to the left of the line that it would have appeared in; other items may flow around its right side.</li>
-                <li><strong>Right:</strong>the item floats to the right of the line that it would have appeared in; other items may flow around its left side.</li>
-                <li><strong>Clear:</strong>Forces the element to appear underneath ("clear") floated elements to the left (<code>clear:left</code>), right (<code>clear:right</code>) or both sides (<code>clear:both</code>).</li>
+                <li><strong>Left: </strong>the item floats to the left of the line that it would have appeared in; other items may flow around its right side.</li>
+                <li><strong>Right: </strong>the item floats to the right of the line that it would have appeared in; other items may flow around its left side.</li>
+                <li><strong>Clear: </strong>Forces the element to appear underneath ("clear") floated elements to the left (<code>clear:left</code>), right (<code>clear:right</code>) or both sides (<code>clear:both</code>).</li>
             </ul>
         </ul>
     </section>
